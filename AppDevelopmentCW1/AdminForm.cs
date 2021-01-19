@@ -10,22 +10,11 @@ using System.Windows.Forms;
 
 namespace AppDevelopmentCW1
 {
-    public partial class LoginAsAdmin : Form
+    public partial class AdminForm : Form
     {
-        public LoginAsAdmin()
+        public AdminForm()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnBack_Click(object sender, EventArgs e)
-        {
-            new Login().Show();
-            this.Hide();
         }
     }
 }
