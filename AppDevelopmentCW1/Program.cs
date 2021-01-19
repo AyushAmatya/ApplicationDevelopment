@@ -16,7 +16,7 @@ namespace AppDevelopmentCW1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FeedbackForm());
+            Application.Run(new Login());
         }
     }
 }
