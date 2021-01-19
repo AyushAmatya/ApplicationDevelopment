@@ -20,3 +20,5 @@ C:\Users\Ayush Amatya\Desktop\AppDevelopmentCW1\AppDevelopmentCW1\obj\Debug\AppD
 C:\Users\Ayush Amatya\Desktop\AppDevelopmentCW1\AppDevelopmentCW1\obj\Debug\AppDevelopmentCW1.pdb
 C:\Users\Ayush Amatya\Desktop\AppDevelopmentCW1\AppDevelopmentCW1\obj\Debug\AppDevelopmentCW1.Login.resources
 C:\Users\Ayush Amatya\Desktop\AppDevelopmentCW1\AppDevelopmentCW1\obj\Debug\AppDevelopmentCW1.LoginAsAdmin.resources
+C:\islington\YEAR 3\Applicaiton Development\CW1\AppDevelopmentCW1\obj\Debug\AppDevelopmentCW1.Login.resources
+C:\islington\YEAR 3\Applicaiton Development\CW1\AppDevelopmentCW1\obj\Debug\AppDevelopmentCW1.LoginAsAdmin.resources
