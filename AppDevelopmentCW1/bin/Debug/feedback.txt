@@ -1,0 +1,1 @@
+{"CriteriaLabel":"haha","FeedbackText":"Excellent","CustomerName":"name","ContactNumber":"number","Email":"email","Suggestion":"suggesstion","criteria":{"Food Quality:":"Excellent"},"FeedbackDate":"2021-01-21T00:18:53.3973043+05:45"},

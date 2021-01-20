@@ -16,6 +16,30 @@ namespace AppDevelopmentCW1
         {
             InitializeComponent();
             addCriteria();
+            btnAction();
+        }
+        public void btnAction()
+        {
+            foreach (Control c in this.panel3.Controls)
+            {
+                if (c is Panel)
+                {
+                    foreach (Control cp in c.Controls)
+                    {
+                        if (cp is Button)
+                        {
+                            Button btnDelete = cp as Button;
+                            btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+                            
+                        }
+                    }
+                    
+                }
+            }
+        }
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            Console.WriteLine(sender);
         }
         public void addCriteria()
         {
@@ -200,6 +224,12 @@ namespace AppDevelopmentCW1
             {
                 MessageBox.Show("Error Occurres", "Data not added");
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            new LoginAsAdmin().Show();
+            this.Hide();
         }
     }
 }

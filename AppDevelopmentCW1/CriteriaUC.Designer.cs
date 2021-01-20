@@ -70,10 +70,11 @@ namespace AppDevelopmentCW1
             this.button1.Text = "ADD";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.AutoScroll = true;
+
+                    // 
+                    // panel1
+                    // 
+                    this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.panel1.Location = new System.Drawing.Point(50, 127);
             this.panel1.Name = "panel1";

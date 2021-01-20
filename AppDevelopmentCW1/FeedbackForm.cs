@@ -49,6 +49,7 @@ namespace AppDevelopmentCW1
                 panel10.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
                 panel10.Size = new System.Drawing.Size(210, 24);
                 panel10.Location = new Point(10, locationY);
+                panel10.Name = "labelPanel";
                 panel10.Controls.Add(label10);
                 this.panel1.Controls.Add(panel10);
 
@@ -103,6 +104,7 @@ namespace AppDevelopmentCW1
 
                 Panel panel11 = new Panel();
                 panel11.SuspendLayout();
+                panel11.Name = "radioButtonPanel";
                 panel11.Controls.Add(button11);
                 panel11.Controls.Add(radioButton15);
                 panel11.Controls.Add(radioButton14);
@@ -128,11 +130,76 @@ namespace AppDevelopmentCW1
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            Feedback f = new Feedback();
+            /*Feedback f = new Feedback();
             f.CustomerName = txtCustomerName.Text;
             f.ContactNumber = txtContactNumber.Text;
             f.Email = txtEmail.Text;
-            f.Suggestion = txtSuggestion.Text;
+            f.Suggestion = txtSuggestion.Text; */
+
+            Feedback r = new Feedback(); //object creating
+            r.CustomerName = txtCustomerName.Text; //get value from textbox and assing to property
+            r.ContactNumber = txtContactNumber.Text;
+            r.Email = txtEmail.Text;
+            r.Suggestion = txtSuggestion.Text;
+            var time = DateTime.Now;
+            r.FeedbackDate = time;
+
+            r.criteria = new Dictionary<string, string>();
+
+            foreach (Control c in this.panel1.Controls)
+            {
+                
+                if (c is Panel)
+                {
+                    Panel p = c as Panel;
+                    if (p.Name == "labelPanel")
+                    {
+                        foreach (Control pc in c.Controls)
+                        {
+                            Label criterialbl = pc as Label;
+                            r.CriteriaLabel = criterialbl.Text;
+                        }
+
+                    }
+                    
+                    if (p.Name == "radioButtonPanel")
+                    {
+                                                  
+                        foreach (Control pc in c.Controls)
+                        {
+                            if (pc is RadioButton)
+                            {
+                                RadioButton rb = pc as RadioButton;
+                                if (rb.Checked)
+                                {
+                                    r.FeedbackText = rb.Text;
+                                    Console.WriteLine(r.CriteriaLabel);
+                                    Console.WriteLine(r.FeedbackText);
+                                    r.criteria.Add(r.CriteriaLabel,r.FeedbackText);
+                                }
+                                
+                            }
+                        }
+                        
+                    }
+                    
+                    //RadioButton cRadioBtn = c as RadioButton;
+                    //Console.WriteLine(cRadioBtn.Name);
+
+
+                    //ComboBox cdv = (ComboBox)this.tabPage1.Controls.Find(cb.Name, true)[0];
+
+                    
+
+                }
+            }
+            string flag = r.SaveFeedback(r);
+            if (flag == "success")
+            {
+
+                MessageBox.Show("Thank you! Your feedback has been recorded.");
+            }
+
         }
 
         private void btnClear_Click(object sender, EventArgs e)
