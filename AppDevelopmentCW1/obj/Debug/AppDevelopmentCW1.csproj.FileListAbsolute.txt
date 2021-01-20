@@ -11,7 +11,6 @@ C:\islington\YEAR 3\Applicaiton Development\CW1\AppDevelopmentCW1\obj\Debug\AppD
 C:\Users\Ayush Amatya\Desktop\AppDevelopmentCW1\AppDevelopmentCW1\bin\Debug\AppDevelopmentCW1.exe.config
 C:\Users\Ayush Amatya\Desktop\AppDevelopmentCW1\AppDevelopmentCW1\bin\Debug\AppDevelopmentCW1.exe
 C:\Users\Ayush Amatya\Desktop\AppDevelopmentCW1\AppDevelopmentCW1\bin\Debug\AppDevelopmentCW1.pdb
-C:\Users\Ayush Amatya\Desktop\AppDevelopmentCW1\AppDevelopmentCW1\obj\Debug\AppDevelopmentCW1.csprojAssemblyReference.cache
 C:\Users\Ayush Amatya\Desktop\AppDevelopmentCW1\AppDevelopmentCW1\obj\Debug\AppDevelopmentCW1.FeedbackForm.resources
 C:\Users\Ayush Amatya\Desktop\AppDevelopmentCW1\AppDevelopmentCW1\obj\Debug\AppDevelopmentCW1.Properties.Resources.resources
 C:\Users\Ayush Amatya\Desktop\AppDevelopmentCW1\AppDevelopmentCW1\obj\Debug\AppDevelopmentCW1.csproj.GenerateResource.cache
@@ -22,3 +21,9 @@ C:\Users\Ayush Amatya\Desktop\AppDevelopmentCW1\AppDevelopmentCW1\obj\Debug\AppD
 C:\Users\Ayush Amatya\Desktop\AppDevelopmentCW1\AppDevelopmentCW1\obj\Debug\AppDevelopmentCW1.LoginAsAdmin.resources
 C:\islington\YEAR 3\Applicaiton Development\CW1\AppDevelopmentCW1\obj\Debug\AppDevelopmentCW1.Login.resources
 C:\islington\YEAR 3\Applicaiton Development\CW1\AppDevelopmentCW1\obj\Debug\AppDevelopmentCW1.LoginAsAdmin.resources
+C:\Users\Ayush Amatya\Desktop\AppDevelopmentCW1\AppDevelopmentCW1\obj\Debug\AppDevelopmentCW1.AdminDashboard.resources
+C:\Users\Ayush Amatya\Desktop\AppDevelopmentCW1\AppDevelopmentCW1\obj\Debug\AppDevelopmentCW1.AdminDashboardUC.resources
+C:\Users\Ayush Amatya\Desktop\AppDevelopmentCW1\AppDevelopmentCW1\obj\Debug\AppDevelopmentCW1.ChartUC.resources
+C:\Users\Ayush Amatya\Desktop\AppDevelopmentCW1\AppDevelopmentCW1\obj\Debug\AppDevelopmentCW1.CriteriaUC.resources
+C:\Users\Ayush Amatya\Desktop\AppDevelopmentCW1\AppDevelopmentCW1\obj\Debug\AppDevelopmentCW1.FeedbackTableUC.resources
+C:\Users\Ayush Amatya\Desktop\AppDevelopmentCW1\AppDevelopmentCW1\obj\Debug\AppDevelopmentCW1.csprojAssemblyReference.cache

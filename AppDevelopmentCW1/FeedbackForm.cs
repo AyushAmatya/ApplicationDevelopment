@@ -117,15 +117,15 @@ namespace AppDevelopmentCW1
                 this.panel1.Controls.Add(panel11);
                 //private System.Windows.Forms.Label label1;
 
-
+                locationY += 30;
                 //private System.Windows.Forms.Panel panel5;
 
-                locationY += 30;
             }
 
             file.Close();
 
         }
+
         private void btnSave_Click(object sender, EventArgs e)
         {
             Feedback f = new Feedback();
