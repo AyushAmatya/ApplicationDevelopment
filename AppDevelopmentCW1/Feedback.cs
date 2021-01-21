@@ -9,9 +9,7 @@ namespace AppDevelopmentCW1
 {
     public class Feedback
     {
-        private string _customerName;
-        public string CriteriaLabel { get; set; }
-        public string FeedbackText { get; set; }
+        
         public string CustomerName { get; set; }
         public string ContactNumber { get; set; }
         public string Email { get; set; }
@@ -33,6 +31,16 @@ namespace AppDevelopmentCW1
         {
             Feedback f;
             f = new Feedback();
+        }
+        public List<Feedback> List()
+        {
+            string d = Utility.ReadFromTextFile(_path);
+            if (d != null)
+            {
+                List<Feedback> ratings = JsonConvert.DeserializeObject<List<Feedback>>(d);
+                return ratings;
+            }
+            return null;
         }
     }
 }

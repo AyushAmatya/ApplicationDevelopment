@@ -5,8 +5,10 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.IO;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Newtonsoft.Json;
 
 namespace AppDevelopmentCW1
 {
@@ -20,16 +22,16 @@ namespace AppDevelopmentCW1
 
         public void addData()
         {
-            string[] row5 = new string[] { "Chocolate Cheesecake", "Dessert",
-        "cream cheese", "***" };
-            string[] row6 = new string[] { "Black Bean Dip", "Appetizer",
-        "black beans, sour cream", "***" };
-            object[] rows = new object[] { row5, row6 };
-            foreach (string[] rowArray in rows)
-            {
-                this.dataGridView1.Rows.Add(rowArray);
-            }
-            
+            Feedback obj = new Feedback();
+            List<Feedback> listRating = obj.List();
+            DataTable dt = Utility.ConvertToDynamicDataTable(listRating);
+            Console.WriteLine(listRating);
+            dataGridView1.DataSource = dt;
+
+            dataGridView1.Columns["criteria"].Visible = false;
+
         }
+
+        
     }
 }
