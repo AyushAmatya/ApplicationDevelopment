@@ -35,11 +35,11 @@ namespace AppDevelopmentCW1
             this.btnFeedbackTable = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.txtCriteria = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
             this.adminDashboardUC1 = new AppDevelopmentCW1.AdminDashboardUC();
             this.feedbackTableUC1 = new AppDevelopmentCW1.FeedbackTableUC();
             this.chartUC1 = new AppDevelopmentCW1.ChartUC();
@@ -56,13 +56,13 @@ namespace AppDevelopmentCW1
             this.panel1.Controls.Add(this.btnFeedbackTable);
             this.panel1.Controls.Add(this.btnDashboard);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.txtCriteria);
-            this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.adminDashboardUC1);
             this.panel1.Controls.Add(this.feedbackTableUC1);
             this.panel1.Controls.Add(this.chartUC1);
             this.panel1.Controls.Add(this.criteriaUC1);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.txtCriteria);
+            this.panel1.Controls.Add(this.panel3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -132,6 +132,19 @@ namespace AppDevelopmentCW1
             this.panel2.Size = new System.Drawing.Size(719, 67);
             this.panel2.TabIndex = 0;
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.Control;
+            this.button2.Location = new System.Drawing.Point(641, 3);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 26);
+            this.button2.TabIndex = 14;
+            this.button2.Text = "Logout";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -173,19 +186,6 @@ namespace AppDevelopmentCW1
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(456, 221);
             this.panel3.TabIndex = 12;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.Control;
-            this.button2.Location = new System.Drawing.Point(641, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 26);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Logout";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // adminDashboardUC1
             // 
@@ -236,6 +236,7 @@ namespace AppDevelopmentCW1
         }
 
         #endregion
+        
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnCriteriaSetup;

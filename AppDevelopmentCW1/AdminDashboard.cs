@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 using System.Windows.Forms;
 
 namespace AppDevelopmentCW1
@@ -50,79 +51,93 @@ namespace AppDevelopmentCW1
             var deleteCriteria = btn.Name + ',';
 
             string line;
-            var tempFile = "tmpCriteria.txt";
-            System.IO.StreamReader file =
-                new System.IO.StreamReader(@"criteria.txt");
-            while ((line = file.ReadLine()) != null)
+            var tempFile = $@"{Guid.NewGuid()}.txt";
+            if (File.Exists("criteria.txt"))
             {
-                if (line != deleteCriteria)
+                System.IO.StreamReader file =
+                new System.IO.StreamReader(@"criteria.txt");
+                while ((line = file.ReadLine()) != null)
                 {
-                    string updatedCriterias = line.Substring(0, line.Length - 1);
-                    Utility.WriteToTextFile("criteria.txt", updatedCriterias, true, 1);
-                    //addCriteria();
-                    MessageBox.Show("Criteria Deleted");
+                    if (line != deleteCriteria)
+                    {
+                        string updatedCriterias = line.Substring(0, line.Length - 1);
+                        Utility.WriteToTextFile(tempFile, updatedCriterias, true, 1);
+                        //addCriteria();
+
+                    }
                 }
+                file.Close();
+                File.Delete("criteria.txt");
+                if (File.Exists(tempFile))
+                {
+                    File.Move(tempFile, "criteria.txt");
+                    addCriteria();
+                }
+
+                MessageBox.Show("Criteria Deleted");
             }
-            /*file.Close();
-            file.Delete(fileName);
-            File.Move(tempFile, fileName);
-            Console.WriteLine(deleteCriteria);*/
+            
+            
         }
         public void addCriteria()
         {
-
             //int locationX = 50;
             //int locationY = 10;
-
+            this.panel3.Controls.Clear();
             int locationY = 10;
             string line;
-            System.IO.StreamReader file =
-                new System.IO.StreamReader(@"criteria.txt");
-            while ((line = file.ReadLine()) != null)
+            if (File.Exists("criteria.txt"))
             {
-                // Remove the extra ','
-                string comboName = line.Substring(0, line.Length - 1);
+                System.IO.StreamReader file =
+                new System.IO.StreamReader(@"criteria.txt");
+                while ((line = file.ReadLine()) != null)
+                {
+                    // Remove the extra ','
+                    string comboName = line.Substring(0, line.Length - 1);
 
-                Label label13 = new Label();
-                label13.AutoSize = true;
-                label13.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-                label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-                label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-                label13.Location = new System.Drawing.Point(6, 5);
-                label13.TabIndex = 1;
-                label13.Size = new System.Drawing.Size(94, 16);
-                label13.Text = comboName;
+                    Label label13 = new Label();
+                    label13.AutoSize = true;
+                    label13.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                    label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+                    label13.Location = new System.Drawing.Point(6, 5);
+                    label13.TabIndex = 1;
+                    label13.Size = new System.Drawing.Size(94, 16);
+                    label13.Text = comboName;
 
-                Button btnDelete11 = new Button();
-                btnDelete11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-                btnDelete11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-                btnDelete11.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-                btnDelete11.Location = new System.Drawing.Point(352, 3);
-                btnDelete11.Size = new System.Drawing.Size(62, 21);
-                btnDelete11.Text = "Delete";
-                btnDelete11.Name = comboName;
-                btnDelete11.UseVisualStyleBackColor = false;
+                    Button btnDelete11 = new Button();
+                    btnDelete11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+                    btnDelete11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    btnDelete11.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+                    btnDelete11.Location = new System.Drawing.Point(352, 3);
+                    btnDelete11.Size = new System.Drawing.Size(62, 21);
+                    btnDelete11.Text = "Delete";
+                    btnDelete11.Name = comboName;
+                    btnDelete11.UseVisualStyleBackColor = false;
 
-                Panel panel13 = new Panel();
-                panel13.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-                panel13.Controls.Add(btnDelete11);
-                panel13.Controls.Add(label13);
-                panel13.Location = new System.Drawing.Point(17, locationY);
-                panel13.Size = new System.Drawing.Size(417, 27);
-                panel13.TabIndex = 2;
+                    Panel panel13 = new Panel();
+                    panel13.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+                    panel13.Controls.Add(btnDelete11);
+                    panel13.Controls.Add(label13);
+                    panel13.Location = new System.Drawing.Point(17, locationY);
+                    panel13.Size = new System.Drawing.Size(417, 27);
+                    panel13.TabIndex = 2;
 
-                this.panel3.Controls.Add(panel13);
+                    this.panel3.Controls.Add(panel13);
 
 
 
-                //private System.Windows.Forms.Label label1;
+                    //private System.Windows.Forms.Label label1;
 
-                locationY += 35;
-                //private System.Windows.Forms.Panel panel5;
+                    locationY += 35;
+                    //private System.Windows.Forms.Panel panel5;
 
+                }
+
+                file.Close();
+                btnAction();
             }
-
-            file.Close();
+            
 
         }
     
@@ -149,8 +164,7 @@ namespace AppDevelopmentCW1
             this.btnDashboard.Font = new System.Drawing.Font("Tempus Sans ITC", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDashboard.ForeColor = System.Drawing.SystemColors.WindowFrame;
 
-            this.feedbackTableUC1.BringToFront();
-
+            this.chartUC1.BringToFront();
             this.label1.Text = "Admin Feedback Table:";
         }
 
@@ -203,7 +217,7 @@ namespace AppDevelopmentCW1
             this.btnFeedbackTable.Font = new System.Drawing.Font("Tempus Sans ITC", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFeedbackTable.ForeColor = System.Drawing.SystemColors.WindowFrame;
 
-            this.chartUC1.BringToFront();
+            this.feedbackTableUC1.BringToFront();
 
             this.label1.Text = "Admin Chart View:";
         }
@@ -246,6 +260,7 @@ namespace AppDevelopmentCW1
                 addCriteria();
                 txtCriteria.Text = "";
                 MessageBox.Show("Criteria Added");
+                btnAction();
 
             }
             catch (Exception ex)

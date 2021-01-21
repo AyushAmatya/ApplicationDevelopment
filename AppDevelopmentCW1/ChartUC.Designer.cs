@@ -33,10 +33,6 @@ namespace AppDevelopmentCW1
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -48,7 +44,7 @@ namespace AppDevelopmentCW1
             this.label1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.label1.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Indigo;
-            this.label1.Location = new System.Drawing.Point(62, 7);
+            this.label1.Location = new System.Drawing.Point(7, 7);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(309, 26);
             this.label1.TabIndex = 22;
@@ -58,9 +54,9 @@ namespace AppDevelopmentCW1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(19, 14);
+            this.panel1.Location = new System.Drawing.Point(19, 95);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(456, 40);
+            this.panel1.Size = new System.Drawing.Size(533, 40);
             this.panel1.TabIndex = 23;
             // 
             // panel3
@@ -68,46 +64,23 @@ namespace AppDevelopmentCW1
             this.panel3.AutoScroll = true;
             this.panel3.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.panel3.Controls.Add(this.dataGridView1);
-            this.panel3.Location = new System.Drawing.Point(19, 60);
+            this.panel3.Location = new System.Drawing.Point(19, 141);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(456, 214);
+            this.panel3.Size = new System.Drawing.Size(533, 215);
             this.panel3.TabIndex = 4;
             // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.InactiveCaption;
             this.dataGridView1.CausesValidation = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4});
+            this.dataGridView1.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(450, 214);
+            this.dataGridView1.Size = new System.Drawing.Size(533, 215);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Column1";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Column2";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Column3";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Column4";
-            this.Column4.Name = "Column4";
             // 
             // ChartUC
             // 
@@ -117,7 +90,7 @@ namespace AppDevelopmentCW1
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
             this.Name = "ChartUC";
-            this.Size = new System.Drawing.Size(504, 385);
+            this.Size = new System.Drawing.Size(580, 385);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -131,9 +104,5 @@ namespace AppDevelopmentCW1
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
     }
 }
