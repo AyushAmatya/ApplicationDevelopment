@@ -16,6 +16,57 @@ namespace AppDevelopmentCW1
         {
             InitializeComponent();
             addCriteria();
+            btnAction();
+        }
+        Utility u = new Utility();
+        public void btnAction()
+        {
+            
+            foreach (Control c in this.panel3.Controls)
+            {
+                if (c is Panel)
+                {
+                    foreach (Control cp in c.Controls)
+                    {
+                        if( cp is Label)
+                        {
+                            Label lblDeleteCriteria = cp as Label;
+                            u.DeleteCriteriaName = lblDeleteCriteria.Text;
+                        }
+                        if (cp is Button)
+                        {
+                            Button btnDelete = cp as Button;
+                            btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+                            //if (HttpContext.Current.Request["MYCLICKEDBUTTONID"] == null)
+                        }
+                    }
+                    
+                }
+            }
+        }
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+            var deleteCriteria = btn.Name + ',';
+
+            string line;
+            var tempFile = "tmpCriteria.txt";
+            System.IO.StreamReader file =
+                new System.IO.StreamReader(@"criteria.txt");
+            while ((line = file.ReadLine()) != null)
+            {
+                if (line != deleteCriteria)
+                {
+                    string updatedCriterias = line.Substring(0, line.Length - 1);
+                    Utility.WriteToTextFile("criteria.txt", updatedCriterias, true, 1);
+                    //addCriteria();
+                    MessageBox.Show("Criteria Deleted");
+                }
+            }
+            /*file.Close();
+            file.Delete(fileName);
+            File.Move(tempFile, fileName);
+            Console.WriteLine(deleteCriteria);*/
         }
         public void addCriteria()
         {
@@ -49,6 +100,7 @@ namespace AppDevelopmentCW1
                 btnDelete11.Location = new System.Drawing.Point(352, 3);
                 btnDelete11.Size = new System.Drawing.Size(62, 21);
                 btnDelete11.Text = "Delete";
+                btnDelete11.Name = comboName;
                 btnDelete11.UseVisualStyleBackColor = false;
 
                 Panel panel13 = new Panel();
@@ -200,6 +252,12 @@ namespace AppDevelopmentCW1
             {
                 MessageBox.Show("Error Occurres", "Data not added");
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            new LoginAsAdmin().Show();
+            this.Hide();
         }
     }
 }

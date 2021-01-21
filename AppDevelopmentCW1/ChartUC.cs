@@ -15,6 +15,21 @@ namespace AppDevelopmentCW1
         public ChartUC()
         {
             InitializeComponent();
+            addData();
+        }
+
+        public void addData()
+        {
+            string[] row5 = new string[] { "Chocolate Cheesecake", "Dessert",
+        "cream cheese", "***" };
+            string[] row6 = new string[] { "Black Bean Dip", "Appetizer",
+        "black beans, sour cream", "***" };
+            object[] rows = new object[] { row5, row6 };
+            foreach (string[] rowArray in rows)
+            {
+                this.dataGridView1.Rows.Add(rowArray);
+            }
+            
         }
     }
 }

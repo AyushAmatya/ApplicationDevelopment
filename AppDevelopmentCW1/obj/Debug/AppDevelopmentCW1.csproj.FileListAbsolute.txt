@@ -27,3 +27,11 @@ C:\Users\Ayush Amatya\Desktop\AppDevelopmentCW1\AppDevelopmentCW1\obj\Debug\AppD
 C:\Users\Ayush Amatya\Desktop\AppDevelopmentCW1\AppDevelopmentCW1\obj\Debug\AppDevelopmentCW1.CriteriaUC.resources
 C:\Users\Ayush Amatya\Desktop\AppDevelopmentCW1\AppDevelopmentCW1\obj\Debug\AppDevelopmentCW1.FeedbackTableUC.resources
 C:\Users\Ayush Amatya\Desktop\AppDevelopmentCW1\AppDevelopmentCW1\obj\Debug\AppDevelopmentCW1.csprojAssemblyReference.cache
+C:\islington\YEAR 3\Applicaiton Development\CW1\AppDevelopmentCW1\obj\Debug\AppDevelopmentCW1.AdminDashboard.resources
+C:\islington\YEAR 3\Applicaiton Development\CW1\AppDevelopmentCW1\obj\Debug\AppDevelopmentCW1.AdminDashboardUC.resources
+C:\islington\YEAR 3\Applicaiton Development\CW1\AppDevelopmentCW1\obj\Debug\AppDevelopmentCW1.ChartUC.resources
+C:\islington\YEAR 3\Applicaiton Development\CW1\AppDevelopmentCW1\obj\Debug\AppDevelopmentCW1.CriteriaUC.resources
+C:\islington\YEAR 3\Applicaiton Development\CW1\AppDevelopmentCW1\obj\Debug\AppDevelopmentCW1.FeedbackTableUC.resources
+C:\islington\YEAR 3\Applicaiton Development\CW1\AppDevelopmentCW1\bin\Debug\Newtonsoft.Json.dll
+C:\islington\YEAR 3\Applicaiton Development\CW1\AppDevelopmentCW1\bin\Debug\Newtonsoft.Json.xml
+C:\islington\YEAR 3\Applicaiton Development\CW1\AppDevelopmentCW1\obj\Debug\AppDevelopmentCW1.csproj.CopyComplete

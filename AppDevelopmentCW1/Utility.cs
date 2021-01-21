@@ -11,6 +11,7 @@ namespace AppDevelopmentCW1
 {
     class Utility
     {
+        public string DeleteCriteriaName { get; set; }
         public static void WriteToTextFile(string path, string data, bool append = true, int count = 1)
         {
             if (!File.Exists(path))
