@@ -52,7 +52,7 @@ namespace AppDevelopmentCW1
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(105)))), ((int)(((byte)(136)))));
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(19, 95);
             this.panel1.Name = "panel1";

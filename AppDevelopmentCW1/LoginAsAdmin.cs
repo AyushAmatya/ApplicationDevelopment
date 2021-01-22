@@ -33,5 +33,11 @@ namespace AppDevelopmentCW1
             new AdminDashboard().Show();
             this.Hide();
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            new Login().Show();
+            this.Hide();
+        }
     }
 }

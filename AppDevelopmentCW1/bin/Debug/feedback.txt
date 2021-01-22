@@ -1,1 +1,2 @@
-{"CustomerName":"Ayush","ContactNumber":"Ayush","Email":"Ayush","Suggestion":"Ayush","criteria":{"Food Rating:":"Excellent","Staff Friendliness:":"Good","Service Rating:":"Good","Live Music Rating:":"Average"},"FeedbackDate":"2021-01-21T16:25:14.3978088+05:45"},
+{"CustomerName":"Ayush Amatya","ContactNumber":"9818963833","Email":"ayush.amatya79@gmail.com","Suggestion":"This restaurant is very good.","criteria":{"Food Rating:":"Excellent","Staff Friendliness:":"Good","Live Music:":"Excellent","Environment:":"Excellent","Cost:":"Good"},"FeedbackDate":"2021-01-22T05:54:59.4552387+05:45"},
+

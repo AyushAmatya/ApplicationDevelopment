@@ -1,3 +1,5 @@
 Food Rating:,
-Live Music Rating:,
-wtf,
+Staff Friendliness:,
+Live Music:,
+Environment:,
+Cost:,

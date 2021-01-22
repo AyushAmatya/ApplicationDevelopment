@@ -40,12 +40,14 @@ namespace AppDevelopmentCW1
             this.button1 = new System.Windows.Forms.Button();
             this.txtCriteria = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.adminDashboardUC1 = new AppDevelopmentCW1.AdminDashboardUC();
             this.feedbackTableUC1 = new AppDevelopmentCW1.FeedbackTableUC();
             this.chartUC1 = new AppDevelopmentCW1.ChartUC();
             this.criteriaUC1 = new AppDevelopmentCW1.CriteriaUC();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -60,9 +62,9 @@ namespace AppDevelopmentCW1
             this.panel1.Controls.Add(this.feedbackTableUC1);
             this.panel1.Controls.Add(this.chartUC1);
             this.panel1.Controls.Add(this.criteriaUC1);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.txtCriteria);
             this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.txtCriteria);
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -124,7 +126,8 @@ namespace AppDevelopmentCW1
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(116)))));
+            this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(42, 12);
@@ -148,10 +151,10 @@ namespace AppDevelopmentCW1
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(138)))), ((int)(((byte)(162)))));
             this.label1.Font = new System.Drawing.Font("Broadway", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Indigo;
-            this.label1.Location = new System.Drawing.Point(253, 19);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(225)))), ((int)(((byte)(198)))));
+            this.label1.Location = new System.Drawing.Point(154, 16);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(310, 31);
             this.label1.TabIndex = 1;
@@ -182,10 +185,21 @@ namespace AppDevelopmentCW1
             // 
             this.panel3.AutoScroll = true;
             this.panel3.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.panel3.Location = new System.Drawing.Point(238, 210);
+            this.panel3.Location = new System.Drawing.Point(222, 210);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(456, 221);
+            this.panel3.Size = new System.Drawing.Size(509, 224);
             this.panel3.TabIndex = 12;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(116)))));
+            this.pictureBox1.Image = global::AppDevelopmentCW1.Properties.Resources.logo1;
+            this.pictureBox1.Location = new System.Drawing.Point(8, 1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(127, 66);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
             // 
             // adminDashboardUC1
             // 
@@ -231,6 +245,7 @@ namespace AppDevelopmentCW1
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -253,5 +268,6 @@ namespace AppDevelopmentCW1
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtCriteria;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
