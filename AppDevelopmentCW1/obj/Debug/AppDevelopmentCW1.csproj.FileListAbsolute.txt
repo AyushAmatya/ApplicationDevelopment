@@ -38,3 +38,5 @@ C:\Users\Ayush Amatya\Desktop\AppDevelopmentCW1\AppDevelopmentCW1\bin\Debug\Newt
 C:\Users\Ayush Amatya\Desktop\AppDevelopmentCW1\AppDevelopmentCW1\obj\Debug\AppDevelopmentCW1.csproj.CopyComplete
 C:\islington\YEAR 3\Applicaiton Development\CW1\AppDevelopmentCW1\obj\Debug\AppDevelopmentCW1.csprojAssemblyReference.cache
 C:\islington\YEAR 3\Applicaiton Development\CW1\AppDevelopmentCW1\obj\Debug\AppDevelopmentCW1.FeedbackSucess.resources
+C:\Users\Ayush Amatya\Desktop\AppDevelopmentCW1\AppDevelopmentCW1\obj\Debug\AppDevelopmentCW1.csprojAssemblyReference.cache
+C:\Users\Ayush Amatya\Desktop\AppDevelopmentCW1\AppDevelopmentCW1\obj\Debug\AppDevelopmentCW1.FeedbackSucess.resources

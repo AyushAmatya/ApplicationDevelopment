@@ -1,5 +1,4 @@
 Food Rating:,
 Staff Friendliness:,
-Live Music:,
 Environment:,
 Cost:,

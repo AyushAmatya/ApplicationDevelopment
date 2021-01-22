@@ -109,7 +109,7 @@ namespace AppDevelopmentCW1
                     btnDelete11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
                     btnDelete11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                     btnDelete11.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-                    btnDelete11.Location = new System.Drawing.Point(352, 3);
+                    btnDelete11.Location = new System.Drawing.Point(422, 3);
                     btnDelete11.Size = new System.Drawing.Size(62, 21);
                     btnDelete11.Text = "Delete";
                     btnDelete11.Name = comboName;
@@ -120,7 +120,7 @@ namespace AppDevelopmentCW1
                     panel13.Controls.Add(btnDelete11);
                     panel13.Controls.Add(label13);
                     panel13.Location = new System.Drawing.Point(17, locationY);
-                    panel13.Size = new System.Drawing.Size(417, 27);
+                    panel13.Size = new System.Drawing.Size(490, 27);
                     panel13.TabIndex = 2;
 
                     this.panel3.Controls.Add(panel13);
