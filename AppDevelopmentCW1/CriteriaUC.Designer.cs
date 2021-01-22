@@ -70,15 +70,14 @@ namespace AppDevelopmentCW1
             this.button1.Text = "ADD";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-
-                    // 
-                    // panel1
-                    // 
-                    this.panel1.AutoScroll = true;
+            // 
+            // panel1
+            // 
+            this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.panel1.Location = new System.Drawing.Point(50, 127);
+            this.panel1.Location = new System.Drawing.Point(27, 127);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(456, 214);
+            this.panel1.Size = new System.Drawing.Size(526, 250);
             this.panel1.TabIndex = 3;
             // 
             // panel2
@@ -86,9 +85,9 @@ namespace AppDevelopmentCW1
             this.panel2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(50, 85);
+            this.panel2.Location = new System.Drawing.Point(27, 85);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(456, 33);
+            this.panel2.Size = new System.Drawing.Size(526, 33);
             this.panel2.TabIndex = 20;
             // 
             // label4
@@ -97,7 +96,7 @@ namespace AppDevelopmentCW1
             this.label4.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label4.Location = new System.Drawing.Point(374, 8);
+            this.label4.Location = new System.Drawing.Point(458, 8);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(55, 16);
             this.label4.TabIndex = 1;
@@ -126,7 +125,7 @@ namespace AppDevelopmentCW1
             this.Controls.Add(this.txtCriteria);
             this.Controls.Add(this.label1);
             this.Name = "CriteriaUC";
-            this.Size = new System.Drawing.Size(556, 352);
+            this.Size = new System.Drawing.Size(577, 397);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);

@@ -240,13 +240,16 @@ namespace AppDevelopmentCW1
                     
 
                 }
+                
             }
             string flag = r.SaveFeedback(r);
             if (flag == "success")
             {
 
-                MessageBox.Show("Thank you! Your feedback has been recorded.");
+                new FeedbackSucess().Show();
+                this.Hide();
             }
+            
 
         }
 
