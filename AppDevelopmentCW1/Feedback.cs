@@ -27,11 +27,6 @@ namespace AppDevelopmentCW1
             return "success";
         }
 
-        public void Sum(int a, int b)
-        {
-            Feedback f;
-            f = new Feedback();
-        }
         public List<Feedback> List()
         {
             string d = Utility.ReadFromTextFile(_path);

@@ -15,6 +15,7 @@ namespace AppDevelopmentCW1
         public LoginAsAdmin()
         {
             InitializeComponent();
+            txtPassword.PasswordChar = '*';
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -30,8 +31,20 @@ namespace AppDevelopmentCW1
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            new AdminDashboard().Show();
-            this.Hide();
+            if (txtUsername.Text == "admin" && txtPassword.Text == "admin")
+            {
+                new AdminDashboard().Show();
+                this.Hide();
+            }
+            else if (txtUsername.Text == "" || txtPassword.Text == "")
+            {
+                MessageBox.Show("Please Dont Leave Fields Empty", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                MessageBox.Show("Incorrect Username or Password", "Check Credential", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
 
         private void button1_Click_1(object sender, EventArgs e)

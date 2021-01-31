@@ -29,27 +29,23 @@ namespace AppDevelopmentCW1
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            this.cmbCriteria = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.ratingChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.btnGetChart = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.ratingChart)).BeginInit();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // cmbCriteria
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(218, 40);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(165, 21);
-            this.comboBox1.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(275, 181);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Choose the Criteria:";
+            this.cmbCriteria.FormattingEnabled = true;
+            this.cmbCriteria.Location = new System.Drawing.Point(218, 40);
+            this.cmbCriteria.Name = "cmbCriteria";
+            this.cmbCriteria.Size = new System.Drawing.Size(206, 21);
+            this.cmbCriteria.TabIndex = 0;
             // 
             // label2
             // 
@@ -63,16 +59,47 @@ namespace AppDevelopmentCW1
             this.label2.TabIndex = 2;
             this.label2.Text = "Choose the Criteria:";
             // 
+            // ratingChart
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.ratingChart.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.ratingChart.Legends.Add(legend1);
+            this.ratingChart.Location = new System.Drawing.Point(38, 82);
+            this.ratingChart.Name = "ratingChart";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.ratingChart.Series.Add(series1);
+            this.ratingChart.Size = new System.Drawing.Size(499, 255);
+            this.ratingChart.TabIndex = 3;
+            this.ratingChart.Text = "chart1";
+            // 
+            // btnGetChart
+            // 
+            this.btnGetChart.BackColor = System.Drawing.Color.Indigo;
+            this.btnGetChart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGetChart.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnGetChart.Location = new System.Drawing.Point(430, 37);
+            this.btnGetChart.Name = "btnGetChart";
+            this.btnGetChart.Size = new System.Drawing.Size(107, 29);
+            this.btnGetChart.TabIndex = 4;
+            this.btnGetChart.Text = "Get Chart";
+            this.btnGetChart.UseVisualStyleBackColor = false;
+            this.btnGetChart.Click += new System.EventHandler(this.btnGetChart_Click);
+            // 
             // FeedbackTableUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Controls.Add(this.btnGetChart);
+            this.Controls.Add(this.ratingChart);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbCriteria);
             this.Name = "FeedbackTableUC";
             this.Size = new System.Drawing.Size(637, 429);
+            ((System.ComponentModel.ISupportInitialize)(this.ratingChart)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -80,8 +107,9 @@ namespace AppDevelopmentCW1
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cmbCriteria;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataVisualization.Charting.Chart ratingChart;
+        private System.Windows.Forms.Button btnGetChart;
     }
 }

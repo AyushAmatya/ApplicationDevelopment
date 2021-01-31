@@ -1,0 +1,4 @@
+Food Rating:,
+Staff Friendliness:,
+Environment:,
+Cost:,

@@ -25,13 +25,15 @@ namespace AppDevelopmentCW1
             Feedback obj = new Feedback();
             List<Feedback> listRating = obj.List();
             DataTable dt = Utility.ConvertToDynamicDataTable(listRating);
-            Console.WriteLine(listRating);
             dataGridView1.DataSource = dt;
 
             dataGridView1.Columns["criteria"].Visible = false;
 
         }
 
-        
+        private void btnSortByDateAsc_Click(object sender, EventArgs e)
+        {
+            Console.WriteLine("lol");
+        }
     }
 }
